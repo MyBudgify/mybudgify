@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Send data to backend for registration
-        fetch('https://your-backend-domain.com/register', { // Change this to your backend's domain
+        fetch('https://rs7cv.h.filess.io/register', { // Change this to your backend's domain
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let message = document.getElementById("login-message");
 
             try {
-                let response = await fetch("https://your-backend-domain.com/login", { // Update this URL
+                let response = await fetch("https://rs7cv.h.filess.io/login", { // Update this URL
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ username, password })
