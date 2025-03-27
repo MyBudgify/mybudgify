@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet"  href="more\styles\style-login.css">
+    <link rel="stylesheet"  href="more\styles\preloader.css">
+  
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p class="loading-text" id="loading-text">Loading... 0%</p>
+        </div>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <div class="register-link">
+            Don't have an account? <a href="register.html">Register here</a>
+        </div>
+
+        <p id="login-message" style="color: red;"></p>
+
+        <script src="more/java/auth.js"></script>
+
+    </div>
+    <script src="more\java\preloader.js"></script>
+</body>
+</html>

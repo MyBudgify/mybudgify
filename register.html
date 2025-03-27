@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="more\styles\style-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Register</h2>
+        <form id="register-form">
+            <div class="input-group">
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Register</button>
+        </form>
+
+        <div class="register-link">
+            Already have an account? <a href="index.html">Login here</a>
+        </div>
+
+        <p id="register-message" style="color: red;"></p>
+    </div>
+
+    <script src="more/java/auth.js"></script>
+</body>
+</html>
