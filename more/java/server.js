@@ -22,13 +22,13 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-// MySQL Connection
+// MySQL Connection (Updated)
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Alpinehacker1212",
-    database: "personalbudget",
-    port: 3333,
+    host: "rs7cv.h.filess.io",  // New MySQL host
+    user: "WebProject_upwardshop", // Your MySQL username
+    password: "31e38226976e8eaa9d7790709be6e2812a69f421", // Your MySQL password
+    database: "WebProject_upwardshop", // Your MySQL database
+    port: 61002, // New port
 });
 
 db.connect((err) => {
